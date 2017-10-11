@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gautam Tour n Travel</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+<style>
+	.head{
+		background: #44D9E6;
+	}
+	.list{
+		font-size: 30px;
+		margin-top: 40px;
+
+	}
+	.tag{
+		font-family: fantasy;
+		font-size: 20px;
+		color: red;
+	}
+	
+</style>
+<body>
+{% include 'includes/header.html' %}
+<div class="container tag">
+	<div class="row">
+		<div class="col-xs-12">
+			<center><b>Wherever you go, go with all your heart.</b></center>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="card">
+            <div class="card-image">
+              <img src="static/bolero.jpg" height="300" width="300">
+              
+            </div>
+            <div class="card-action">
+              
+  <a class="waves-effect waves-light btn-large" href="/bolero">Select</a>
+      
+            </div>
+          </div>
+		</div>
+		<div class="col-sm-6">
+			<div class="card">
+            <div class="card-image">
+              <img src="static/scorpio.jpg" height="300px" width="300px">
+              
+            </div>
+            <div class="card-action">
+              
+  <a class="waves-effect waves-light btn-large" href="/scorpio">Select</a>
+      
+            </div>
+          </div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="card">
+            <div class="card-image">
+              <img src="static/innova.png" height="300" width="300">
+              
+            </div>
+            <div class="card-action">
+              
+  <a class="waves-effect waves-light btn-large" href="/innova">Select</a>
+      
+            </div>
+          </div>
+		</div>
+		<div class="col-sm-6">
+			<div class="card">
+            <div class="card-image">
+              <img src="static/images.jpeg" height="300px" width="300px">
+              
+            </div>
+            <div class="card-action">
+              
+  <a class="waves-effect waves-light btn-large" href="/qualis">Select</a>
+      
+            </div>
+          </div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

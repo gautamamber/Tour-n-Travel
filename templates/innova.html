@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+<style>
+	.scor{
+		color: blue;
+		font-family: fantasy;
+		font-size: 60px;
+	}
+	.spec{
+		font-size: 40px;
+		font-family: serif;
+		margin-top: 20px;
+	}
+	.det{
+		font-size: 50px;
+		font-family: fantasy;
+		color: red;
+	}
+</style>
+<body>
+{% include 'includes/header.html' %}
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-xs-12">
+			<div class="card">
+            <div class="card-image">
+              <center><img src="static/innova.png" height="300" width="300"></center>
+              
+            </div>
+          </div>
+		</div>
+		<div class="col-sm-6 col-xs-12">
+			<center><b class="scor">Specifications:</b><br>
+			<b class="spec">7 Seater</b><br>
+			<b class="spec">12 Rs/km</b><br></center>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<center><b class="det">Enter details:</b></center>
+		</div>
+	</div>
+</div>
+<div class="conttainer">
+	<div class="row">
+		{% include 'includes/form.html' %}
+	</div>
+</div>
+
+
+</body>
+</html>
